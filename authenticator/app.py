@@ -26,4 +26,5 @@ if __name__ == "__main__":
     # loading the ml model for inference
     model = load_model()
 
+    # running the flask app
     app.run(debug=True, port=8400)
