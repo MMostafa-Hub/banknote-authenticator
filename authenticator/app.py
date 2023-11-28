@@ -23,7 +23,7 @@ def authentication():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8400)
-
     # loading the ml model for inference
     model = load_model()
+
+    app.run(debug=True, port=8400)
