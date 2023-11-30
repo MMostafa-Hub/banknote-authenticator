@@ -1,4 +1,3 @@
-# from sklearn.calibration import CalibratedClassifierCV
 from flask import Flask, request, jsonify
 import pandas as pd
 import pickle
@@ -26,4 +25,9 @@ def authentication():
 
 if __name__ == "__main__":
     # running the flask app
-    app.run(debug=False, use_reloader=False)
+    app.run(
+        host="0.0.0.0",
+        port=5000,
+        debug=False,
+        use_reloader=False,
+    )
