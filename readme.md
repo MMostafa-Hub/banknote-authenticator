@@ -11,7 +11,7 @@
 2. Run the docker image
 
     ```bash
-    docker run -d -p 5000 banknote-authenticator
+    docker run -d -p 5000:5000 banknote-authenticator
     ```
 
 ## Testing the API
